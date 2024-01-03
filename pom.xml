@@ -12,6 +12,14 @@
 
     <description>Parent project: Define dependencies</description>
 
+    <!-- submodules -->
+    <modules>
+        <module>daocao_common</module>
+        <module>daocao_support</module>
+        <module>daocao_auth</module>
+        <module>daocao_starter</module>
+    </modules>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
