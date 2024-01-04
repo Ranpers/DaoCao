@@ -7,5 +7,5 @@ import pers.yiran.auth.domain.mapper.UmsSysUserMapper;
 import pers.yiran.auth.domain.service.IUmsSysUserService;
 
 @Service
-public class UmsSysUserService extends ServiceImpl<UmsSysUserMapper, UmsSysUser> implements IUmsSysUserService {
+public class UmsSysUserServiceImpl extends ServiceImpl<UmsSysUserMapper, UmsSysUser> implements IUmsSysUserService {
 }

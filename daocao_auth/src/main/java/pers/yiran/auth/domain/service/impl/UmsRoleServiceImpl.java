@@ -7,5 +7,5 @@ import pers.yiran.auth.domain.mapper.UmsRoleMapper;
 import pers.yiran.auth.domain.service.IUmsRoleService;
 
 @Service
-public class UmsRoleService extends ServiceImpl<UmsRoleMapper, UmsRole> implements IUmsRoleService {
+public class UmsRoleServiceImpl extends ServiceImpl<UmsRoleMapper, UmsRole> implements IUmsRoleService {
 }
