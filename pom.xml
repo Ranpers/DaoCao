@@ -30,7 +30,7 @@
         <springdoc.version>1.6.15</springdoc.version>
         <knife4j.version>4.1.0</knife4j.version>
         <mybatis-plus.version>3.5.3.2</mybatis-plus.version>
-        <hutool.version>5.8.22</hutool.version>
+        <hutool.version>5.8.24</hutool.version>
         <springfox.version>3.0.0</springfox.version>
         <lombok.version>1.18.30</lombok.version>
         <daocao.version>1.0.0</daocao.version>
