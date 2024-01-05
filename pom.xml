@@ -6,7 +6,7 @@
 
     <groupId>pers.yiran</groupId>
     <artifactId>daocao</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <packaging>pom</packaging>
 
@@ -29,7 +29,8 @@
         <mysql.version>8.0.33</mysql.version>
         <springdoc.version>1.6.15</springdoc.version>
         <knife4j.version>4.1.0</knife4j.version>
-        <mybatis-plus.version>3.5.3.2</mybatis-plus.version>
+        <mybatis-plus.version>3.5.5</mybatis-plus.version>
+        <mybatis-spring.version>3.0.3</mybatis-spring.version>
         <hutool.version>5.8.24</hutool.version>
         <springfox.version>3.0.0</springfox.version>
         <lombok.version>1.18.30</lombok.version>
@@ -100,6 +101,12 @@
                 <artifactId>mybatis-plus-generator</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
+            <!-- 解决mybatis-spring版本过低导致项目无法启动 -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis-spring.version}</version>
+            </dependency>
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
@@ -120,6 +127,26 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>pers.yiran</groupId>
+                <artifactId>daocao_common</artifactId>
+                <version>${daocao.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>pers.yiran</groupId>
+                <artifactId>daocao_support</artifactId>
+                <version>${daocao.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>pers.yiran</groupId>
+                <artifactId>daocao_auth</artifactId>
+                <version>${daocao.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>pers.yiran</groupId>
+                <artifactId>daocao_starter</artifactId>
+                <version>${daocao.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

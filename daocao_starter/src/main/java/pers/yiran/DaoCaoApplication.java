@@ -1,4 +1,4 @@
-package pers.yiran.starter;
+package pers.yiran;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

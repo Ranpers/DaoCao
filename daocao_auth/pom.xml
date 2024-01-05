@@ -6,7 +6,7 @@
     <parent>
         <groupId>pers.yiran</groupId>
         <artifactId>daocao</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>daocao_auth</artifactId>
@@ -15,12 +15,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>pers.yiran</groupId>
+            <artifactId>daocao_support</artifactId>
         </dependency>
     </dependencies>
 
