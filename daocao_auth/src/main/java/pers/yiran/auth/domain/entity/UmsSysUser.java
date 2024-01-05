@@ -1,8 +1,6 @@
 package pers.yiran.auth.domain.entity;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableLogic;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -23,7 +21,9 @@ public class UmsSysUser implements Serializable {
     private Integer status;
     private String creator;
     private String updater;
+    @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private LocalDateTime updateTime;
     private String remark;
     //逻辑删除 MyBatis-Plus默认 0 未删除 1 已删除
