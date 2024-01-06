@@ -4,3 +4,6 @@ spring:
     url: jdbc:mysql://localhost:3306/daocao?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
     username: Yiran
     password: Yiran,020923
+server:
+  servlet:
+    context-path: /api

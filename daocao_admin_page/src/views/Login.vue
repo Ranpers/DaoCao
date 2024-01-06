@@ -35,7 +35,7 @@
                 </div>
                 <el-form-item>
                     <!-- 按钮 -->
-                    <el-button type="primary">登陆</el-button>
+                    <el-button type="primary" @click="loginHandler">登陆</el-button>
                 </el-form-item>
             </el-form>
         </div>
@@ -45,11 +45,24 @@
 <script setup>
 import { ref } from 'vue';
 
+import { login } from '@/api/auth/index.js';
+
 const loginForm = ref({
     account: undefined,
     password: undefined,
     rememberMe: undefined
 });
+
+//登陆方法
+function loginHandler() {
+    login(loginForm.value).then(res => {
+        console.log("登录====》",res);
+        if(res.data.code == 200) {
+            // 将token存储到pinia中
+            console.log(res.data);
+        }
+    });
+};
 </script>
 
 <style lang="scss" scoped>
